@@ -7,6 +7,8 @@ public class BulletMoment : MonoBehaviour
 {
     public float bulletspeed;
     public int Score;
+    ScoreManager score;
+
    
 
 
@@ -28,15 +30,12 @@ public class BulletMoment : MonoBehaviour
         {
             
             Destroy(Enemy.gameObject);
-            AddScore();
+            score = GameObject.Find("scoreManager").GetComponent<ScoreManager>();
+            score.ScoreCalculator(10);
             
         }
 
     }
 
-   void  AddScore()
-    {
-        Score++;
-        print(Score);
-    }
+  
 }

@@ -8,6 +8,7 @@ public class SpawnEnemies : MonoBehaviour
 
     
     public float time;
+    float time1;
    
 
     public GameObject enemyPrefab;
@@ -33,7 +34,12 @@ public class SpawnEnemies : MonoBehaviour
             time = 0;
 
         }
+
+       
+        
     }
+
+   
 
 
 }
